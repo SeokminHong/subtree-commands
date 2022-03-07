@@ -11,7 +11,7 @@ git switch $BRANCH
 git subtree pull --prefix $PREFIX $REPO $REF --squash
 
 git switch $CUR_BRANCH
-git merge --squash --allow-unrelated-histories $BRANCH
+git merge -X theirs --squash --allow-unrelated-histories $BRANCH
 
 # Pop stashed files
 if [[ $DIRTY ]]; then
