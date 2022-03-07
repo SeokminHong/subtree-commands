@@ -1,15 +1,15 @@
 #!/usr/bin/env sh
 
 # A name of branch for pulling the subtree.
-BRANCH=""
+BRANCH="subtree"
 # A remote branch name for the subtree's origin.
-REMOTE=""
+REMOTE="repo-subtree"
 # A directory where the subtree will be located.
-PREFIX=""
+PREFIX="packages/repo-subtree"
 # A repository of the subtree.
-REPO=""
+REPO="git@github.com:SeokminHong/repo-subtree.git"
 # An identifier for the subtree. e.g. branch, tag, or commit hash
-IDENTIFIER=""
+IDENTIFIER="main"
 
 if [[ $1 == "init" ]]; then
   source ./init.sh
