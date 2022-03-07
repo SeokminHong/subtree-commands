@@ -9,6 +9,8 @@ REPO=""
 # A reference for the subtree. e.g. branch, tag, or commit hash
 REF=""
 
+CUR_BRANCH=$(git branch --show-current)
+
 if [[ $1 == "init" ]]; then
   source ./init.sh
 elif [[ $1 == "pull" ]]; then
