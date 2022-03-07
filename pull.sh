@@ -4,4 +4,5 @@ set -e
 git switch $BRANCH
 git subtree pull --prefix $PREFIX $REPO $REF --squash
 
-source ./merge.sh
+git switch $CUR_BRANCH
+git merge --squash --allow-unrelated-histories $BRANCH
