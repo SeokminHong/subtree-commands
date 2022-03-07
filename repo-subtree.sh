@@ -11,6 +11,12 @@ REF="main"
 
 CUR_BRANCH=$(git branch --show-current)
 
+if [[ $2 == "--continue" ]]; then
+  CONTINUE=1
+else
+  CONTINUE=0
+fi
+
 if [[ $1 == "init" ]]; then
   source ./init.sh
 elif [[ $1 == "pull" ]]; then
