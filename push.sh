@@ -1,2 +1,1 @@
-git subtree push --prefix=$PREFIX $REMOTE_PUSH $IDENTIFIER
-
+git subtree push --prefix=$PREFIX $REPO $REF
