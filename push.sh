@@ -34,4 +34,4 @@ git subtree push --prefix=$PREFIX $REPO $REF
 git subtree pull --prefix $PREFIX $REPO $REF --squash
 
 git switch $CUR_BRANCH
-git merge --squash --allow-unrelated-histories $BRANCH
+git merge -X theirs --squash --allow-unrelated-histories $BRANCH
