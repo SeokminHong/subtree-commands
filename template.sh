@@ -16,7 +16,7 @@ if [[ $1 == "init" ]]; then
 elif [[ $1 == "pull" ]]; then
   source ./pull.sh
 elif [[ $1 == "push" ]]; then
-  source ./pull.sh
+  source ./push.sh
 else
   echo "Only 'init', 'pull', and 'push' commands are allowed."
 fi
