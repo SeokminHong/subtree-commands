@@ -54,7 +54,7 @@ touch ./packages/repo-subtree/second
 ./repo-subtree.sh push
 ```
 
-### Notice
+### Note
 
 When conflicts happened during the pushing process, you _should_ resolve them
 and run the following commands.
