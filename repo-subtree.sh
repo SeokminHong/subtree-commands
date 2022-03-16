@@ -11,11 +11,14 @@ REF="main"
 
 CUR_BRANCH=$(git branch --show-current)
 
-if [[ $2 == "--continue" ]]; then
-  CONTINUE=1
-else
-  CONTINUE=0
-fi
+CONTINUE=0
+
+for arg in "$@" 
+do
+  if [ $arg == "--continue" ]; then
+    CONTINUE=1
+  fi
+done
 
 if [[ $1 == "init" ]]; then
   source ./init.sh
